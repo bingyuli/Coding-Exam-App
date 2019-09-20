@@ -1,0 +1,18 @@
+<main class="cd-main-content">
+    h1 These are the student(s) who took the exam
+    h3(id="examidofthisexam") Exam ID: #{examid}
+    //- p #{allname}
+    for each,val in students
+        div(class="contact-area")
+            <div class="contact">
+                <main>
+                    <section class="gradecontact">
+                        <div class="gradecontent">
+                            <aside>
+                                a(name="examresponse" id=each) #{allnames[val]}
+                            </aside>
+                        </div>
+                    </section>
+                </main>
+            </div>
+</main>

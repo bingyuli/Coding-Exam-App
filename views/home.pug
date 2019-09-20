@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		//- link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		//- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+		style
+			include css/main.css
+			include css/util.css
+			include css/jackbox.css
+	</head>
+	<body>
+		//- <div class="limiter">
+		<div class="container-login100">
+			div(class="left-half")
+				h1 <span>{</span> SIMPLE CODING QUIZZES <span>}</span>
+				h1 <span>FOR</span> DEVELOPERS
+				h1 <span>BY</span> DEVELOPERS
+			div(class="right-half")
+				<div class="wrap-login100">
+					<span class="login100-form-title m-b-20">Welcome</span>
+					<div class="wrap-input100 validate-input m-t-10 m-b-25">
+						<input class="input100" type="text" name="username">
+						<span class="focus-input100" data-placeholder="Email"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-25">
+						<input class="input100" type="password" name="code">
+						<span class="focus-input100" data-placeholder="Invitation Code"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-25">
+						<input class="input100" type="password" name="repeat">
+						<span class="focus-input100" data-placeholder="Password"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-30">
+						<input class="input100" type="password" name="password">
+						<span class="focus-input100" data-placeholder="Password"></span>
+					</div>
+					<div class="container-login100-form-btn">
+						<button name="login" class="login100-form-btn">Login</button>
+					</div>
+					<ul class="login-more p-t-30">
+						<li class="m-b-8">
+							<span class="txt1">Forgot</span>
+							<a href="javascript:void(0)" name="retrieve" class="txt2">Password?</a>
+						</li>
+						<li>
+							<span name="have"class="txt1">Don’t have an account?</span>
+							<a href="javascript:void(0)" name="signup" class="txt2">Sign up</a>
+						</li>
+					</ul>
+				</div>
+		</div>
+		//- </div>
+		script
+			include js/jackbox.js
+			include js/home.js
+	</body>
+</html>

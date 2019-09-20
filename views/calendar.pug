@@ -1,0 +1,16 @@
+for each in examcard
+    h1 #{each[0]}
+    <div class="band">
+    for detail in each.slice(1) 
+        <div class="box">
+            a(id=detail[0] name="examLink" class="card")
+                <article>
+                    h1 #{detail[1]}
+                    span #{detail[2]}
+                </article>
+            if(detail[3])
+                <div class='wave'></div>
+                <div class='wave -two'></div>
+                <div class='wave -three'></div>
+        </div>
+    </div>
